@@ -123,6 +123,9 @@ class Receiver {
 		);
 		register_meta( 'comment', 'avatar', $args );
 
+		// Allow custom comment meta keys to be additionally defined
+		do_action( 'webmention_custom_meta_keys' );
+
 	}
 
 	/**
